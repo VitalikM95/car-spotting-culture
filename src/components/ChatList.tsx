@@ -1,6 +1,17 @@
-import React from 'react'
+import { mainApi } from '../redux/main.api'
 
 const ChatList = () => {
+  const { data } = mainApi.useGetAllChatsQuery()
+  console.log(data)
+
+  const formatDate = (date: string) => {
+    return new Date(date).toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    })
+  }
+
   return (
     <div className="chat__container">
       <div className="chat__header">
@@ -36,16 +47,23 @@ const ChatList = () => {
       </div>
       <div className="chat__list">
         <h3 className="chat__list_title">Chats</h3>
-        <div className="chat__list_item">
-          <div className="chat__list_avatar">
-            <img src="./src/assets/girl1.png" width={40} alt="avatar" />
-          </div>
-          <div className="chat__list_content">
-            <div className="chat__list_name">Alice Freeman</div>
-            <div className="chat__list_text">How was your meeting?</div>
-          </div>
-          <div className="chat__list_date"> Aug 17, 22</div>
-        </div>
+        {data?.map((chat) => {
+          const lastMessage = chat.messages.slice(-1)[0] || {}
+          return (
+            <div key={chat._id} className="chat__list_item">
+              <div className="chat__list_avatar">
+                <img src="./src/assets/girl1.png" width={40} alt="avatar" />
+              </div>
+              <div className="chat__list_content">
+                <div className="chat__list_name">
+                  {chat.firstName} {chat.lastName}
+                </div>
+                <div className="chat__list_text">{lastMessage.content || ''}</div>
+              </div>
+              <div className="chat__list_date">{formatDate(chat.createdAt)}</div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
