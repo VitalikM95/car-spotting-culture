@@ -4,74 +4,71 @@ import { IOpenModal } from '../types/models'
 
 export const Ticker: FC<IOpenModal> = ({ setActive }) => {
   return (
-    <div id='join' className='mt-[150px]'>
-      <div className='h-1 min-w-full bg-white my-5'></div>
-      <div className='watt-font uppercase text-white text-5xl animation-wrap'>
-        <div className='animation-item animate-[scroll_20s_linear_infinite]'>
-          <div>Спілкуйтеся з однодумцями</div>
+    <div id="join" className="mt-[150px]">
+      <div className="h-1 min-w-full bg-white my-5"></div>
+      <div className="watt-font uppercase text-white text-5xl animation-wrap">
+        <div className="animation-item animate-[scroll_20s_linear_infinite]">
+          <div>Take cool photos of cars</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
-          <div>Будьте в курсі та надихайтеся</div>
+          <div>Sign up via Instagram</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
         </div>
-        <div
-          aria-hidden='true'
-          className='animation-item animate-[scroll_20s_linear_infinite]'
-        >
-          <div>Спілкуйтеся з однодумцями</div>
+        <div aria-hidden="true" className="animation-item animate-[scroll_20s_linear_infinite]">
+          <div>Take cool photos of cars</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
-          <div>Будьте в курсі та надихайтеся</div>
+          <div>Sign up via Instagram</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
         </div>
       </div>
-      <div className='h-1 min-w-full bg-white my-5'></div>
-      <div className='watt-font uppercase text-white text-5xl animation-wrap'>
-        <div className='animation-item animate-[scroll_20s_linear_infinite_reverse]'>
-          <div>Mожливості співпраці </div>
+      <div className="h-1 min-w-full bg-white my-5"></div>
+      <div className="watt-font uppercase text-white text-5xl animation-wrap">
+        <div className="animation-item animate-[scroll_20s_linear_infinite_reverse]">
+          <div>Join us at the start</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
-          <div>Покажіть свою роботу</div>
+          <div>Grow with us</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
-          <div>Діліться знаннями</div>
+          <div>Help us to become better</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
         </div>
         <div
-          aria-hidden='true'
-          className='animation-item animate-[scroll_20s_linear_infinite_reverse] '
+          aria-hidden="true"
+          className="animation-item animate-[scroll_20s_linear_infinite_reverse] "
         >
-          <div>Mожливості співпраці </div>
+          <div>Join us at the start</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
-          <div>Покажіть свою роботу</div>
+          <div>Grow with us</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
-          <div>Діліться знаннями</div>
+          <div>Help us to become better</div>
           <div>
-            <img src={Arrow} alt='arrow right' />
+            <img src={Arrow} alt="arrow right" />
           </div>
         </div>
       </div>
-      <div className='h-1 min-w-full bg-white mt-5'></div>
-      <div className='flex justify-center'>
+      <div className="h-1 min-w-full bg-white mt-5"></div>
+      <div className="flex justify-center">
         <button
-          className='w-[187px] h-[52px] mt-20 bg-myblue rounded-[20px] text-white font-semibold hover:bg-myblue-light active:bg-myblue transition-all ease-in-out'
+          className="w-[187px] h-[52px] mt-20 bg-myblue rounded-[20px] text-white font-semibold hover:bg-myblue-light active:bg-myblue transition-all ease-in-out"
           onClick={() => setActive(true)}
         >
-          Приєднатись
+          Join us
         </button>
       </div>
     </div>

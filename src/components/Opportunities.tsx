@@ -1,55 +1,51 @@
 const blockInfo = [
   {
     num: '01',
-    title: 'Спілкуйтеся з однодумцями',
-    text: 'Знайдіть та спілкуйтеся з колегами-дизайнерами по всій Україні, які поділяють вашу пристрасть і прагнення до досконалості. Розширюйте свою професійну мережу та розвивайте цінні зв’язки, які можуть призвести до нової співпраці та кар’єрного зростання',
+    title: 'The website you are currently on',
+    text: 'This is the initial version of the website, which was created mainly for acquaintance and as a foundation for further development. But here you can already register using Instagram and become a member of the project',
   },
   {
     num: '02',
-    title: 'Продемонструйте своє портфоліо',
-    text: 'Покажіть свою творчу роботу візуально привабливо та впорядковано. Поділіться своїми проектами, тематичними дослідженнями та досвідом дизайну, щоб справити враження на потенційних клієнтів і роботодавців. Нехай ваше портфоліо говорить само за себе та залучає цікаві можливості',
+    title: 'Implementation of AI',
+    text: 'We plan to use AI extensively to improve content selection. AI will monitor social media pages and select the most interesting content to share. Of course, everything will be linked to you, so this is a good way to develop social media',
   },
   {
     num: '03',
-    title: 'Співпрацюйте над проектами',
-    text: 'Досліджуйте можливості співпраці з іншими дизайнерами в нашій спільноті. Незалежно від того, чи шукаєте ви ко-дизайнера, відгуки про свою роботу чи когось, щоб об’єднатися в проекті, Design Connect надає сприятливе середовище для співпраці та творчого обміну',
+    title: 'Adding interactivity',
+    text: "Over time, we will add the ability to like and comment on your and other people's photos with cars, which will allow you to create a photo rating where the best car spotter will receive rewards. We also plan to use a map with marks where you took this or that photo",
   },
   {
     num: '04',
-    title: 'Будьте в курсі та надихайтеся',
-    text: 'Отримуйте доступ до великої кількості галузевих ідей, тенденцій і ресурсів, які сприятимуть вашому професійному зростанню. Беріть участь в обговореннях, діліться знаннями та навчайтеся у експертів галузі, щоб покращити свої навички та залишатися в авангарді галузі',
+    title: 'Grow your social networks with us',
+    text: 'The more participants in the movement, the larger the audience will be reached. Photos with your links will receive interest and clicks on the link, which means new subscribers and audience, and most importantly, it will all be your like-minded people who will appreciate your photos.',
   },
 ]
 
 export const Opportunities = () => {
   return (
-    <section id='howItWorks' className='mt-[150px]'>
-      <h3 className='text-center watt-font uppercase mb-10 text-5xl'>
-        що тут можна робити
+    <section id="howItWorks" className="mt-[150px]">
+      <h3 className="text-center watt-font uppercase mb-10 text-5xl">
+        Community development plan{' '}
       </h3>
-      <div className='flex flex-wrap justify-center lg:justify-between'>
-        {blockInfo.map(item => (
-          <div key={item.num} className='w-[500px] mt-10'>
-            <div className='flex items-center mb-5'>
-              <div className='watt-font uppercase text-4xl text-myblue mr-[10px]'>
-                {item.num}.
-              </div>
-              <h5 className='watt-font uppercase text-2xl text-myblue'>
-                {item.title}
-              </h5>
+      <div className="flex flex-wrap justify-center lg:justify-between">
+        {blockInfo.map((item) => (
+          <div key={item.num} className="w-[500px] mt-10">
+            <div className="flex items-center mb-5">
+              <div className="watt-font uppercase text-4xl text-myblue mr-[10px]">{item.num}.</div>
+              <h5 className="watt-font uppercase text-2xl text-myblue">{item.title}</h5>
             </div>
-            <p className='text-lg'>{item.text}</p>
+            <p className="text-lg">{item.text}</p>
           </div>
         ))}
       </div>
       <iframe
-        id='guide'
-        className='my-[150px]'
-        width='100%'
-        height='300'
-        src='https://www.youtube.com/embed/NpEaa2P7qZI'
-        title='YouTube video player'
-        allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+        id="guide"
+        className="my-[150px]"
+        width="100%"
+        height="300"
+        src="https://www.youtube.com/embed/H6sC0iPFRgw?si=F9yeyhn63O7fagvA"
+        title="YouTube video player"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
     </section>

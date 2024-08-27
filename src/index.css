@@ -11,25 +11,28 @@
     box-sizing: border-box;
     font-weight: 400;
     font-size: 16px;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-      'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji';
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
 
 @font-face {
   font-family: 'Wattauchimma';
-  src: local('Wattauchimma'),
-    url('./assets/fonts/Wattauchimma.ttf') format('truetype');
+  src: local('Wattauchimma'), url('./assets/fonts/Wattauchimma.ttf') format('truetype');
 }
 
 .watt-font {
   font-family: 'Wattauchimma';
 }
 
+.password-input {
+  -webkit-text-security: disc; /* Для WebKit-браузерів, таких як Chrome та Safari */
+  text-security: disc; /* Для Firefox, який не підтримує `-webkit-text-security` */
+}
+
 .container {
-  @apply w-full max-w-[1192px] mx-auto px-2;
+  @apply w-full max-w-[1192px] mx-auto px-6;
 }
 
 .button-effects {
@@ -78,7 +81,7 @@
   .reviews > li {
     width: 100%;
     max-width: 400px;
-    height: 400px;
+    /* height: 400px; */
   }
 }
 .reviews > li:nth-child(odd) {
