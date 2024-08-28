@@ -117,8 +117,8 @@ export const Modal: FC<IProps> = ({ active, setActive }) => {
             <Auth closeModal={setActive} isLogin={isLogin} />
           ) : (
             <div className="flex flex-grow flex-col justify-between items-center">
-              <img className="flex-grow w-[200px]" src={Team} alt="team" />
-              <div className="text-center  md:text-2xl font-semibold mb-2">Welcome Car Spotter</div>
+              <img className="flex-grow w-[180px]" src={Team} alt="team" />
+              <div className="text-center md:text-2xl font-semibold mb-2">Welcome Car Spotter</div>
               <p className="text-center text-sm md:text-lg mb-2 font-light">Enter your details</p>
               <div className="flex mt-2 flex-wrap justify-center">
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -162,7 +162,7 @@ export const Modal: FC<IProps> = ({ active, setActive }) => {
                   <button
                     onClick={handleClick}
                     disabled={buttonState.disabled}
-                    className={`w-[345px] h-[52px] rounded-[20px] border-2 font-semibold transition-all ease-in-out m-2 ${buttonState.color}`}
+                    className={`w-[345px] h-[52px] rounded-[20px] border-2 font-semibold transition-all ease-in-out m-2 mb-6 ${buttonState.color}`}
                   >
                     {buttonState.text}
                   </button>
