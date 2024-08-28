@@ -49,8 +49,7 @@ export const Auth: FC<IProps> = ({ isLogin, closeModal }) => {
 
   const onSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:4444/api/data', instData)
-      console.log('Data successfully saved:', response.data)
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}`, instData)
 
       closeModal(false)
       setInstData({ name: 'yaroslava_rishko', hiddenText: '' })
