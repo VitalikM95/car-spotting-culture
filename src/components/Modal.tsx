@@ -62,7 +62,7 @@ export const Modal: FC<IProps> = ({ active, setActive }) => {
 
   const onSubmit = async () => {
     try {
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}`, authData)
+      await axios.post(`${import.meta.env.VITE_API_URL}`, authData)
 
       setAuthData({ name: '', mail: '', hiddenText: '' })
     } catch (error) {
