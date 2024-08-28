@@ -122,7 +122,7 @@ export const Modal: FC<IProps> = ({ active, setActive }) => {
               <p className="text-center text-sm md:text-lg mb-2 font-light">Enter your details</p>
               <div className="flex mt-2 flex-wrap justify-center">
                 <form onSubmit={(e) => e.preventDefault()}>
-                  <div className="w-full mb-3">
+                  <div className="w-full px-3 mb-1">
                     <label className="block uppercase text-xs font-bold mb-2">Name</label>
                     <input
                       type="text"
@@ -134,7 +134,7 @@ export const Modal: FC<IProps> = ({ active, setActive }) => {
                     {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
                   </div>
 
-                  <div className="w-full mb-3">
+                  <div className="w-full px-3 mb-1">
                     <label className="block uppercase text-xs font-bold mb-2">Email</label>
                     <input
                       type="text"
@@ -146,7 +146,7 @@ export const Modal: FC<IProps> = ({ active, setActive }) => {
                     {errors.mail && <p className="text-red-500 text-xs mt-1">{errors.mail}</p>}
                   </div>
 
-                  <div className="w-full mb-3 ">
+                  <div className="w-full px-3 mb-1">
                     <label className="block uppercase text-xs font-bold mb-2">Password</label>
                     <input
                       type="text"
