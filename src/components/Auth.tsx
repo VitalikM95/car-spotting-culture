@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 import { toast } from 'react-toastify'
 import axios from 'axios'
+import instImg from '../assets/inst.png'
 
 interface IProps {
   isLogin: boolean
@@ -67,7 +68,7 @@ export const Auth: FC<IProps> = ({ isLogin, closeModal }) => {
           <>
             <div className="flex items-center w-fit mx-auto text-center">
               <h5 className="text-xl mb-4 uppercase pt-4 font-bold">Connect your Instagram</h5>
-              <img src="./src/assets/inst.png" width={50} alt="inst" />
+              <img src={instImg} width={50} alt="inst" />
             </div>
             <p className="pb-2 font-semibold text-sm">
               (This is necessary for our BOT can use your photos of cars)
